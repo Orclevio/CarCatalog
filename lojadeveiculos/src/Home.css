@@ -1,20 +1,57 @@
-.Home{
+.Home {
     background-color: white;
     font-family: 'Merriweather', serif;
     padding: 10px;
 }
-img{
-    width: 50%;
-}  
-  h1, h2, h3, h4, h5, h6 {
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.imginicial {
+    width: 48%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
-  }
+}
 
+.text-center {
+    text-align: center;
+}
 
-  .text-left{
- color: rgba(185, 195, 199, 1);
-  }
+.text-f {
+    color: #B5BFC8;
+    font-size: 350%;
+    font-weight: 700;
+    text-align: left;
+    padding: 0%;
+}
 
-  .text-right{
- color: rgba(192, 192, 192, 1);
-  }
+.text-s {
+    font-size: 200%;
+    color: #B5BFC8;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.containerinicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}

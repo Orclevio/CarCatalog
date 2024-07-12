@@ -2,6 +2,7 @@
 import React from 'react';
 import './Header.css';
 import NavList from './NavList';
+import logo from '../../imagens/logo.png';
 
 const Header = () => {
   const leftNavItems = [
@@ -20,6 +21,7 @@ const Header = () => {
   return (
     <header className="Home-header">
       <nav className="navbar">
+      <img src={logo} alt="logo" className='logo'/>
         <NavList items={leftNavItems} className="nav-left" />
         <NavList items={rightNavItems} className="nav-right" />
       </nav>

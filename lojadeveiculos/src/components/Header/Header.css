@@ -4,7 +4,10 @@
     background-color: white;
     color: white;
   }
-  
+  .logo{
+    width: 15%;
+    border-radius: 10%;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,6 +34,7 @@
   
   .nav-left {
     display: flex;
+    margin-left: 1%;
   }
   
   .nav-right {
