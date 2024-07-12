@@ -1,0 +1,40 @@
+/* src/components/Header.css */
+
+.Home-header {
+    background-color: white;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item a {
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .nav-item a:hover {
+    font-weight: bold;
+  }
+  
+  .nav-left {
+    display: flex;
+  }
+  
+  .nav-right {
+    margin-left: auto;
+    display: flex;
+  }
+  
