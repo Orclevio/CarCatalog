@@ -23,7 +23,12 @@ const Header = () => {
       <nav className="navbar">
       <img src={logo} alt="logo" className='logo'/>
         <NavList items={leftNavItems} className="nav-left" />
+        <div className="search-bar nav-right">
+        <input type="text" placeholder="Buscar modelos, marcas..." />
+        <button>Buscar</button>
+      </div>
         <NavList items={rightNavItems} className="nav-right" />
+        
       </nav>
     </header>
   );

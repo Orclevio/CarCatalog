@@ -18,13 +18,11 @@ const ProductCard = ({ product }) => {
           <Typography variant="body2" color="text.secondary">
             {product.description}
           </Typography>
-          <Typography variant="h6" component="div">
-            ${product.price}
-          </Typography>
+          
         </CardContent>
       </CardActionArea>
       <Button variant="contained" color="primary" style={{ margin: 10 }}>
-        VER CATÁLOGO
+        VER MODELOS
       </Button>
     </Card>
   );
