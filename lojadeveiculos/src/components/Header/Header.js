@@ -3,12 +3,12 @@ import React from 'react';
 import './Header.css';
 import NavList from './NavList';
 import logo from '../../imagens/logo.png';
-import { Link } from 'react-router-dom';
+import LoginTwoToneIcon from '@mui/icons-material/LoginTwoTone';
 
 const Header = () => {
   const leftNavItems = [
     { href: "/", text: "Início" },
-    { href: "/catalogo", text: "Catálogo" },
+    { href: "/catalogo", text: "Catálogo Completo" },
     { href: "/modelos-populares", text: "Modelos Populares" },
     { href: "/promocoes", text: "Promoções" },
   ];
@@ -16,7 +16,7 @@ const Header = () => {
   const rightNavItems = [
     { href: "#sobre-nos", text: "Sobre Nós" },
     { href: "#contato", text: "Contato" },
-    { href: "#login", text: "Login/Registrar" },
+    { href: "/login", text: "Login" },
   ];
 
   return (
@@ -31,7 +31,9 @@ const Header = () => {
         <button>Buscar</button>
       </div>
         <NavList items={rightNavItems} className="nav-right" />
-        
+        <div className='login-icon'>
+        <LoginTwoToneIcon color="action" href="/"/>
+        </div>
       </nav>
     </header>
   );

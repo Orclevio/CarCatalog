@@ -17,14 +17,16 @@ const CompanyCard = ({ company }) => {
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                {company.name}
+                    {company.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                {company.description}
+                    {company.description}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">VER MODELOS</Button>
+                <Button variant="contained" color="primary" style={{ margin: 10 }}>
+                    VER TODOS OS VEÍCULOS
+                </Button>
                 <Button size="small">MAIS INFO</Button>
             </CardActions>
         </Card>

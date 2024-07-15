@@ -28,7 +28,7 @@ img {
   }
   
   .banner-content {
-    background-color: rgba(44, 68, 104, 0.4); /* Fundo semitransparente para melhorar a legibilidade do texto */
+    background-color: rgba(255, 255, 255, 0.95); /* Fundo semitransparente para melhorar a legibilidade do texto */
     padding: 20px;
     border-radius: 10px;   
     margin-bottom: 300px;
@@ -64,7 +64,61 @@ img {
     background-color: #0056b3;
   }
   
+  .cta-button2 {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #00d10a;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
   
+  .cta-button2:hover {
+    background-color: #002d5c;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -84,18 +138,19 @@ h6 {
 }
 
 .text-f {
-    color: white;
+    color: rgba(44, 68, 104, 1);
     font-weight: 700;
     padding: 0%;
 }
 
 .text-s {
-    color: white;
+    color: rgba(44, 68, 104, 1);
     margin-top: -15px;
 }
 
 .containerinicio {
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     text-align: center;

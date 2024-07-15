@@ -10,6 +10,7 @@ const ProductCard = ({ product }) => {
           height="150"
           image={product.image}
           alt={product.name}
+          style={{ objectFit: 'contain' }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -22,7 +23,7 @@ const ProductCard = ({ product }) => {
         </CardContent>
       </CardActionArea>
       <Button variant="contained" color="primary" style={{ margin: 10 }}>
-        VER MODELOS
+        VER VERSÕES
       </Button>
     </Card>
   );
