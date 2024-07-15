@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardActionArea, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
+
 const ProductCard = ({ product }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>

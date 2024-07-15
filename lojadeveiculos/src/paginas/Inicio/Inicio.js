@@ -79,7 +79,7 @@ const produtos = [
     {
         id: 6,
         name: 'Fiat Mobi 2024',
-        description: 'O Trending Topic das ruas',
+        description: 'O Trending Topic das ruas!',
         image: 'https://mobi.fiat.com.br/images/Versions/like/000000.webp'
     },
     {

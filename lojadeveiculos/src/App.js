@@ -8,6 +8,7 @@ import ModelosPopulares from './paginas/Populares/Populares';
 import SobreNos from './components/footer/Footer';
 import Promocoes from './paginas/Promocoes/Promocoes';
 import Login from './paginas/Login/Login';
+import UnderConstruction from './components/UnderConstruction';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/promocoes" element={<Promocoes />} />
         <Route path="/sobre-nos" element={<SobreNos />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/underconstruction" element={<UnderConstruction />} />
       </Routes>
       <Footer />
     </Router>

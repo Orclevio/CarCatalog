@@ -8,13 +8,13 @@ const UnderConstruction = () => {
       style={{
         textAlign: 'center',
         padding: '50px 20px',
-        width: '100vw',   // Largura total da tela
-        height: '100vh',  // Altura total da tela
+        width: '100vw',   
+        height: '100vh',  
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f0f0f0', // Cor de fundo suave
+        backgroundColor: '#f0f0f0',
       }}
     >
       <ConstructionIcon style={{ fontSize: '100px', color: '#FFC107' }} />
