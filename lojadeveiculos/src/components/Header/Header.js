@@ -3,7 +3,13 @@ import React from 'react';
 import './Header.css';
 import NavList from './NavList';
 import logo from '../../imagens/logo.png';
-import LoginTwoToneIcon from '@mui/icons-material/LoginTwoTone';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import SearchIcon from '@mui/icons-material/Search';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Header = () => {
   const leftNavItems = [
@@ -12,27 +18,27 @@ const Header = () => {
     { href: "/modelos-populares", text: "Modelos Populares" },
     { href: "/promocoes", text: "Promoções" },
   ];
-
-  const rightNavItems = [
-    { href: "#sobre-nos", text: "Sobre Nós" },
-    { href: "#contato", text: "Contato" },
-    { href: "/login", text: "Login" },
-  ];
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate('/login');
+  }
 
   return (
     <header className="Home-header">
       <nav className="navbar">
-      
-          <img src={logo} alt="logo" className='logo' />
-
+        <img src={logo} alt="logo" className='logo' />
         <NavList items={leftNavItems} className="nav-left" />
         <div className="search-bar nav-right">
-        <input type="text" placeholder="Buscar modelos, marcas..." />
-        <button>Buscar</button>
-      </div>
-        <NavList items={rightNavItems} className="nav-right" />
-        <div className='login-icon'>
-        <LoginTwoToneIcon color="action" href="/"/>
+          <input type="text" placeholder="Buscar modelos, marcas..." />
+          <IconButton color='primary' aria-label="Pesquisar" ><SearchIcon /></IconButton>
+        </div>
+        <div className="nav-right">
+
+          <Button variant="contained"  onClick={handleClick} startIcon={<AccountCircleIcon color='white'/>} >
+  Entrar
+</Button>
+          
+          
         </div>
       </nav>
     </header>

@@ -92,7 +92,20 @@ img {
 
 
 
+  @media (max-width: 480px) {
 
+    .banner {
+      width: 90%;
+      background-image:none !important;
+      background-color: white;
+      margin-top: -100px;
+    }
+    .cta-button2 {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+
+  }
 
 
 

@@ -1,15 +1,18 @@
 import React from 'react';
-import { Typography, Box, Button } from '@mui/material';
+import { Typography, Box, Button, useTheme, useMediaQuery } from '@mui/material';
 import ConstructionIcon from '@mui/icons-material/Construction';
 
 const UnderConstruction = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Box
       style={{
         textAlign: 'center',
         padding: '50px 20px',
-        width: '100vw',   
-        height: '100vh',  
+        width: '97.9%',
+        height: '73vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -17,8 +20,8 @@ const UnderConstruction = () => {
         backgroundColor: '#f0f0f0',
       }}
     >
-      <ConstructionIcon style={{ fontSize: '100px', color: '#FFC107' }} />
-      <Typography variant="h2" component="h1" gutterBottom>
+      <ConstructionIcon style={{ fontSize: isMobile ? '50px' : '100px', color: '#FFC107' }} />
+      <Typography variant={isMobile ? 'h4' : 'h2'} component="h1" gutterBottom>
         Página em Construção
       </Typography>
       <Typography variant="body1" gutterBottom>
