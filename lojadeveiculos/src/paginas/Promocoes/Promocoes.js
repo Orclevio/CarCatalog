@@ -1,11 +1,10 @@
 import './Promocoes.css';
-
+import PagConstr from "../../components/UnderConstruction";
 function Promocoes() {
     return (
-      <div className="">      
-  
-
-      </div>
+      <div className="">
+      <PagConstr />
+    </div>
     );
   }
   

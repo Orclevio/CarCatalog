@@ -1,11 +1,10 @@
 import './Populares.css';
-
+import PagConstr from "../../components/UnderConstruction";
 function Populares() {
     return (
-      <div className="">      
-  
-
-      </div>
+      <div className="">
+      <PagConstr />
+    </div>
     );
   }
   

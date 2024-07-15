@@ -1,12 +1,12 @@
 import './Catalogo.css';
+import PagConstr from "../../components/UnderConstruction";
 
 function Catalogo() {
-    return (
-      <div className="">      
-  
+  return (
+    <div className="">
+      <PagConstr />
+    </div>
+  );
+}
 
-      </div>
-    );
-  }
-  
-  export default Catalogo;
+export default Catalogo;
