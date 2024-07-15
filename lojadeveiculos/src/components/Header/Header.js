@@ -3,13 +3,14 @@ import React from 'react';
 import './Header.css';
 import NavList from './NavList';
 import logo from '../../imagens/logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const leftNavItems = [
-    { href: "#home", text: "Início" },
-    { href: "#catalogo", text: "Catálogo" },
-    { href: "#modelos-populares", text: "Modelos Populares" },
-    { href: "#promocoes", text: "Promoções" },
+    { href: "/", text: "Início" },
+    { href: "/catalogo", text: "Catálogo" },
+    { href: "/modelos-populares", text: "Modelos Populares" },
+    { href: "/promocoes", text: "Promoções" },
   ];
 
   const rightNavItems = [
@@ -21,7 +22,9 @@ const Header = () => {
   return (
     <header className="Home-header">
       <nav className="navbar">
-      <img src={logo} alt="logo" className='logo'/>
+      
+          <img src={logo} alt="logo" className='logo' />
+
         <NavList items={leftNavItems} className="nav-left" />
         <div className="search-bar nav-right">
         <input type="text" placeholder="Buscar modelos, marcas..." />
