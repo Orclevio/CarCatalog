@@ -7,7 +7,7 @@ const UnderConstruction = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box
+    <Box 
       style={{
         textAlign: 'center',
         padding: '50px 20px',

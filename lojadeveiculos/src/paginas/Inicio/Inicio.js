@@ -96,7 +96,7 @@ function Inicio() {
         <div>
             <div id="page-produtos">
             <Container>
-                <h1 className='titprinc'>Os veículos mais pesquisados pelos consumidores:</h1>
+                <h1 className='titprinc'>Os veículos de 2024 mais vendidos:</h1>
                 <Grid container spacing={6}>
                     {produtos.map(product => (
                         <Grid item key={product.id} xs={12} sm={6} md={4}>
@@ -113,7 +113,7 @@ function Inicio() {
             <br></br>
             <div id="page-empresas">
             <Container>
-            <h1 className='titprinc'>Visualizar modelos por montadora:</h1>
+            <h1 className='titprinc'>Visualizar modelos por marca:</h1>
                 <Grid container spacing={6}>
                     {empresas.map(company => (
                         <Grid item key={company.id} xs={12} sm={6} md={4}>
