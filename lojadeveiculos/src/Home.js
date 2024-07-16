@@ -21,7 +21,7 @@ function Home() {
         <div className="banner" style={{ backgroundImage: `url(${imgprinc})` }}>
           <div className="banner-content">
             <h1 className="text-center text-f">Bem-vindo ao Catálogo Automotivo</h1>
-            <h2 className="text-center text-s">Conheça mais sobre o carro dos seus sonhos</h2>
+            <h2 className="text-center text-s">Conheça mais sobre o mercado automobilistico</h2>
             <button className="cta-button" onClick={handleCTAClick}>Produtos mais vendidos</button>
             <button className="cta-button2" onClick={handleCTAClick2}>Empresas mais buscadas</button>
           </div>
