@@ -82,60 +82,6 @@ img {
   }
   
 
-
-
-
-
-
-
-
-
-
-
-  @media (max-width: 480px) {
-
-    .banner {
-      width: 90%;
-      background-image:none !important;
-      background-color: white;
-      margin-top: -100px;
-    }
-    .cta-button2 {
-visibility: hidden;
-    }
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h1,
 h2,
 h3,
@@ -167,4 +113,18 @@ h6 {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+
+  .banner {
+    width: 90%;
+    background-image:none !important;
+    background-color: white;
+    margin-top: -100px;
+  }
+  .cta-button2 {
+visibility: hidden;
+  }
+
 }
